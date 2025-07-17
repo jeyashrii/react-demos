@@ -7,8 +7,9 @@ import { UserProfile } from "./components/useContext/UserProfile";
 import Reducer from "./components/useReducer/Reducer";
 import Counter from "./components/useReducer/Counter";
 import UseReference from "./components/useRef/FocusInput";
-
 import Timer from "./components/useRef/Timer";
+import useFetch from "./components/customHook/useFetch";
+import ListComponent from "./components/customHook/ListComponent";
 const App = () => {
   return (
     <>
@@ -28,7 +29,9 @@ const App = () => {
       <Reducer></Reducer> */}
       {/* ----------useReference--------- */}
       {/* <FocusInput></FocusInput> */}
-      <Timer></Timer>
+      {/* <Timer></Timer> */}
+      {/* Custom Hook */}
+      <ListComponent></ListComponent>
     </>
   );
 };
