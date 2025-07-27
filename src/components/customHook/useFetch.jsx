@@ -5,7 +5,10 @@ function useFetch(url) {
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())
-      .then((data) => setData(data));
+      .then((data) => {
+        console.log("Fetched data:", data);
+        setData(data);
+      });
   }, [url]);
   return [data];
 }

@@ -8,8 +8,11 @@ import Reducer from "./components/useReducer/Reducer";
 import Counter from "./components/useReducer/Counter";
 import UseReference from "./components/useRef/FocusInput";
 import Timer from "./components/useRef/Timer";
+import FocusInput from "./components/useRef/FocusInput";
 import useFetch from "./components/customHook/useFetch";
 import ListComponent from "./components/customHook/ListComponent";
+import Index from "./components/useId/Index";
+import Todo from "./components/todo/Todo";
 const App = () => {
   return (
     <>
@@ -28,10 +31,13 @@ const App = () => {
       {/* <Counter></Counter>
       <Reducer></Reducer> */}
       {/* ----------useReference--------- */}
-      {/* <FocusInput></FocusInput> */}
-      {/* <Timer></Timer> */}
-      {/* Custom Hook */}
-      <ListComponent></ListComponent>
+      {/* <FocusInput></FocusInput>
+      <Timer></Timer> */}
+      {/* ---------------Custom Hook------------ */}
+      {/* <ListComponent></ListComponent> */}
+      {/* ----------useId---------- */}
+      {/* <Index></Index> */}
+      <Todo />
     </>
   );
 };
